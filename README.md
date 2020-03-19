@@ -63,15 +63,6 @@ Ejemplo:
     
 En el caso del navegador Opera, se debe añadir un nuevo parámetro que especifica la ruta dónde está el ejecutable del navegador.
 
- ## Jenkins file
- 
- Para utilizar el jenkinsfile necesitas crear una credencial con id password-github, ejecutar con parametro, donde se solicita el 
- usuario de github. Ésta configuracion solo ejecuta la prueba en el navegador firefox.
- 
- ## Pipeline Azure DevOps
- 
- ir a http://bit.ly/2Pxeuqy luego ingresar en Pipelines -> Releases -> DevFest -> Release-4
- 
  # Advertencia 
  El ejemplo utiliza usuarios de GitHub, si el usuario que usa es nuevo, puede fallar, ya que GitHub lo envía a una página diferente a la que se usó en el ejercicio.
  
@@ -139,15 +130,6 @@ Example:
     gradle test -Dgithub-user=cedaniel200 -Dpassword=123456 -Dbinary="C:\Users\miusuario\AppData\Local\Programs\Opera\60.0.3255.83\opera.exe" -Dcontext=opera -Dwebdriver.driver=opera
     gradle aggregate
     
-In the case of the Opera browser, a new parameter must be added specifying the path where the browser executable is.
-
-## Jenkins file
- 
-To use the jenkinsfile you need to create a credential with id password-github, Run with parameter, where the github user is requested. This configuration only runs the test in the firefox browser.
-
- ## Pipeline Azure DevOps
- 
-go to http://bit.ly/2Pxeuqy after that, click in Pipelines -> Releases -> DevFest -> Release-4
  
 # Warning
 The example uses GitHub users, if the user used is new it may fail, since GitHub sends it to a different page than the one used in the exercise.
